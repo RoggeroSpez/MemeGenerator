@@ -4,6 +4,10 @@
   justify-content: center;
 }
 
+.req {
+  color: red;
+}
+
 .meme-generator {
   margin: 20px auto;
   width: 400px;
