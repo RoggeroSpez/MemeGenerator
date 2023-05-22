@@ -45,3 +45,11 @@ submit.addEventListener("click", function(event) {
     });
 
 });
+
+input.addEventListener('keyup', function(e) {
+  if (e.key === 'ArrowUp' || e.key === 'ArrowDown' || e.key === 'Enter') {
+    useSuggestion(e);
+  } else {
+    searchHandler(e);
+  }
+});
