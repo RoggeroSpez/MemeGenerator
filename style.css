@@ -78,3 +78,66 @@
   max-width: 500px;
   max-height: 500px;
  }
+ @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+
+ *,
+ *::before,
+ *::after {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ 
+ body {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     width: 100%;
+     background: #ECE7B4;
+ }
+ 
+ .background {
+     display: flex;
+     flex-direction: column;
+     position: relative;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .pikachu {
+     width: 15vmin;
+     height: 15vmin;
+     transform: rotate(10deg);
+     opacity: 0;
+     transition: 0.3s;
+ }
+ 
+ .active {
+     height: 15vmin;
+     width: 15vmin;
+     transform: translateY(-10vmin) rotate(10deg);
+     opacity: 1;
+     transition: 0.3 ease;
+ }
+ 
+ .btn {
+     position: absolute;
+     width: 30vmin;
+     height: 10vmin;
+     background: #32502E;
+     color: #f3efcc;
+     font-family: "Lato", sans-serif;
+     font-size: 3vmin;
+     letter-spacing: 0.5vmin;
+     border-style: none;
+     border: 2px solid #000;
+     border-radius: 50px;
+     outline: transparent;
+     cursor: pointer;
+     transition: background 0.5s;
+ }
+ 
+ .btn:hover {
+     background: #000;
+ }
