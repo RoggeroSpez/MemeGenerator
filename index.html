@@ -13,7 +13,10 @@
     <div class="meme-generator">
       <hr>
         <label type="url">Image URL<span class="req">*</span></label>
-        <input type="url" id="url" placeholder="Place Image URL" pattern="https://.*" required>
+        <input type="url" id="url" placeholder="Place Image URL" pattern="https://.*" minlength="8" required list="optional">
+        <datalist id="optional">
+          <option value="https://th.bing.com/th?id=OIP.YjJSBQVO5Cy9RBxwNqfj7AHaJ5&w=216&h=289&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"></option>
+        </datalist>
       <hr>
         <label>Top Text</label>
         <input type="text" id="topText" placeholder="Top Text (optional)">
@@ -24,16 +27,11 @@
         <!--<input id="bts" type="number" name="bottomTextSize">-->
        
         <button id="button" type="submit">Create Meme</button>
-        <!-- <div class="background">
-          <img src="https://svgshare.com/i/aat.svg" alt="pikachu" class="pikachu">
-          <button class="btn">SUBMIT</button>
-      </div>-->
     </div>
     </form>
     <h2 id="DatMeme">Meme</h2>
     <div id="meme-container">
       <!--Meme Me up scotty-->
-      <!--Test Meme Img https://th.bing.com/th?id=OIP.YjJSBQVO5Cy9RBxwNqfj7AHaJ5&w=216&h=289&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2-->
     </div>
 <script src="script.js"></script>
 </body>
