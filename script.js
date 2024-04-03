@@ -43,6 +43,16 @@ submit.addEventListener("click", function(event) {
         event.target.parentElement.remove();
     });
 
+    document.getElementById('creator').addEventListener('submit', function(event) {
+        const urlInput = document.getElementById('url');
+        const urlPattern = /^(ftp|http|https):\/\/[^ "]+$/;
+    
+        if (!urlPattern.test(urlInput.value)) {
+          alert('Please enter a valid URL.');
+          event.preventDefault(); // Prevent form submission
+        }
+      });
+
 });
 
 /* Need to create a Requirement on InputValue to only allow pass if it has a URL and text wrap*/
