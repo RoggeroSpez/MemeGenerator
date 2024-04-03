@@ -45,4 +45,4 @@ submit.addEventListener("click", function(event) {
 
 });
 
-/* Need to create a Restriction on InputValue to only allow pass if it has a URL */
+/* Need to create a Requirement on InputValue to only allow pass if it has a URL and text wrap*/
